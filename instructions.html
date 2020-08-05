@@ -15,15 +15,13 @@ The customer will then be redirected to the catalogue page.</p>
 <p>The link should be of the form
   <a href="https://x.eporta.com//buttons/inbound?product-id=your-product-id">https://<span class="company-name">{{you-company-name}}</span>.eporta.com/buttons/inbound?product-id=your-product-id</a>.
 
-
 <script>
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('slug');
 
   var classes = document.getElementsByClassName("company-name")
-  console.log(classes)
   for(var i = 0; i < classes.length; i++){
     classes[i].textContent = myParam;
   }
-
+  alert('hi');
 </script>
