@@ -7,13 +7,13 @@
 <h2 id="adding-links">Adding links</h2>
 <h3 id="general-catalogue-link">General catalogue link</h3>
 <p>For a general catalogue link, you simply link to the URL
-<a href="https://x.eporta.com/buttons/inbound">https://<span class="company-name">{{you-company-name}}</span>.eporta.com/buttons/inbound</a>.
+  <pre><code>https://<span class="company-name">{{you-company-name}}</span>.eporta.com/buttons/inbound</code></pre>
 The customer will then be redirected to the catalogue page.</p>
 <h3 id="product-specific-link">Product specific link</h3>
 <p>To link to a specific product page within your Tradehub, you will need your SKU or product ID (these are the ones sent to us in your data upload).</p>
 <p>The URL for these links includes the <code>product-id</code> query string parameter, which should be replace by the relevant SKU/ID for the product you want to link to.</p>
 <p>The link should be of the form
-  <a href="https://x.eporta.com//buttons/inbound?product-id=your-product-id">https://<span class="company-name">{{you-company-name}}</span>.eporta.com/buttons/inbound?product-id=your-product-id</a>.
+  <pre><code>https://<span class="company-name">{{you-company-name}}</span>.eporta.com/buttons/inbound?product-id=your-product-id</code></pre>
 
 <script>
   const urlParams = new URLSearchParams(window.location.search);
